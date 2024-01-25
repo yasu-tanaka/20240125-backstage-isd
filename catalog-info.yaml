@@ -8,8 +8,8 @@ metadata:
   links:
     - title: Management
       url: https://mgmt.api.spklab-isd.com
-    - title: Documentation
-      url: https://backstage.spklab-isd.com/docs/default/Component/apisix
+    - title: 経済産業省gBizINFO HP
+      url: https://info.gbiz.go.jp
 spec:
   type: openapi
   owner: group:default/team-devops
