@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: API_gbiz
+  description: |
+    APISIXにある、経済産業省gbiz API
+  links:
+    - title: Website
+      url: https://mgmt.api.spklab-isd.com
+    - title: Website
+      url: https://info.gbiz.go.jp/about/index.html
+  annotations:
+    APISIX/website-url: https://mgmt.api.spklab-isd.com
+spec:
+  type: library
+  owner: tanaka
+  lifecycle: experimental
