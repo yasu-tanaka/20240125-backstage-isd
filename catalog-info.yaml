@@ -1,17 +1,24 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: API_gbiz
+  tags: ['apisix']
   description: |
     APISIXにある、経済産業省gbiz API
   links:
-    - title: Website
+    - title: Management
       url: https://mgmt.api.spklab-isd.com
-    - title: Website
-      url: https://info.gbiz.go.jp/about/index.html
-  annotations:
-    APISIX/website-url: https://mgmt.api.spklab-isd.com
+    - title: Documentation
+      url: https://backstage.spklab-isd.com/docs/default/Component/apisix
 spec:
-  type: library
-  owner: tanaka
+  type: openapi
+  owner: group:default/team-devops
   lifecycle: experimental
+  system: isd-system
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+    title: Ministry of Economy, Trade and Industry API
+    servers:
+      - url: https://api.spklab-isd.com/gbiz
