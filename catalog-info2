@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: API_test01
+  tags: ['apisix']
+  description: |
+    APISIXにある、経済産業省gbiz APIの登録用カタログ
+  links:
+    - title: Management
+      url: https://mgmt.api.spklab-isd.com
+    - title: 経済産業省gBizINFO HP
+      url: https://info.gbiz.go.jp
+spec:
+  type: openapi
+  owner: group:default/team-devops
+  lifecycle: experimental
+  system: spklab-demo2-engineering
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+    title: Ministry of Economy, Trade and Industry API
+    servers:
+      - url: https://api.spklab-isd.com/gbiz
