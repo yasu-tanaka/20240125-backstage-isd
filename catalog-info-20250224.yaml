@@ -14,7 +14,7 @@ spec:
   type: openapi
   owner: group:default/team-devops
   lifecycle: experimental
-  system: default/spklab-multicluster-engeneering
+  system: default/spklab-multicluster-engineering
   definition: |
     openapi: "3.0.0"
     info:
